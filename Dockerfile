@@ -38,7 +38,7 @@ RUN npm config set unsafe-perm true
 RUN npm install -g npm@6.9.2
 
 COPY client-participation/package*.json ./
-COPY precompiled_modules/admin_modules ./node_modules
+COPY precompiled_modules/participation_modules ./node_modules
 
 COPY client-participation/polis.config.template.js polis.config.js
 # If polis.config.js exists on host, will override template here.
