@@ -29,6 +29,8 @@ services:
       - "polis-net"
     # Scale the server container to a given number of instances.
     scale: 1
+    ports:
+      - "5000:5000"
 
   math:
     container_name: polis-math
@@ -55,21 +57,21 @@ services:
       - "backups:/backups"
       - "postgres:/var/lib/postgresql/data"
 
-  nginx-proxy:
-    container_name: polis-nginx-proxy
-    image: docker.io/compdem/polis-nginx-proxy:${TAG}
-    build:
-      context: ./file-server
-      dockerfile: nginx.Dockerfile
-    environment:
-      - TAG
-    depends_on:
-      - "server"
-    networks:
-      - "polis-net"
-    ports:
-      - "80:80"
-      - "443:443"
+#  nginx-proxy:
+#    container_name: polis-nginx-proxy
+#    image: docker.io/compdem/polis-nginx-proxy:${TAG}
+#    build:
+#      context: ./file-server
+#      dockerfile: nginx.Dockerfile
+#    environment:
+#      - TAG
+#    depends_on:
+#      - "server"
+#    networks:
+#      - "polis-net"
+#    ports:
+#      - "80:80"
+#      - "443:443"
 
   file-server:
     container_name: polis-file-server
