@@ -1,1 +1,4 @@
 *~
+.idea/*
+math/.cpcache
+.DS_store
