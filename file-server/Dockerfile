@@ -12,7 +12,7 @@ FROM client-base AS client-admin
 
 WORKDIR /client-admin/app
 
-COPY client-admin/package.json ./
+COPY client-admin/package*.json ./
 RUN npm install
 
 COPY client-admin/polis.config.template.js polis.config.js
@@ -58,7 +58,7 @@ FROM client-base AS client-report
 
 WORKDIR /client-report/app
 
-COPY client-report/package.json ./
+COPY client-report/package*.json ./
 # This should be working with `npm ci`, but isn't; Need to debug
 RUN npm install
 
