@@ -31,6 +31,7 @@ services:
     scale: 1
     ports:
       - "5000:5000"
+    restart: always
 
   math:
     container_name: polis-math
@@ -42,6 +43,7 @@ services:
       context: ./math
     networks:
       - "polis-net"
+    restart: always
 
   postgres:
     container_name: polis-postgres
@@ -56,6 +58,7 @@ services:
     volumes:
       - "backups:/backups"
       - "postgres:/var/lib/postgresql/data"
+    restart: always
 
 #  nginx-proxy:
 #    container_name: polis-nginx-proxy
@@ -83,6 +86,7 @@ services:
         GIT_HASH: "${GIT_HASH}"
     networks:
       - "polis-net"
+    restart: always
 
 networks:
   polis-net:
