@@ -37,7 +37,7 @@ RUN npm config set unsafe-perm true
 # See: https://stackoverflow.com/a/56134858/504018
 RUN npm install -g npm@6.9.2
 
-COPY client-participation/package.json ./
+COPY client-participation/package*.json ./
 
 # It would be nice if this was ci, but misbehaving for some reason
 RUN npm install
