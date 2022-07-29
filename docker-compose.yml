@@ -49,7 +49,6 @@ services:
     container_name: polis-postgres
     env_file: ./server/docker-db-dev.env
     image: docker.io/compdem/polis-postgres:${TAG}
-    restart: always
     build:
       context: ./server
       dockerfile: Dockerfile-db
