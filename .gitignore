@@ -3,3 +3,7 @@
 math/.cpcache
 .DS_store
 *.tar
+
+load-test/report*
+load-test/results
+load-test/jmeter.log
