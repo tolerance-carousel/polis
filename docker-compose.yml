@@ -27,10 +27,10 @@ services:
       - "file-server"
     networks:
       - "polis-net"
-    # Scale the server container to a given number of instances.
-    scale: 1
     ports:
-      - "5000:5000"
+      - "5000-5002:5000"
+    # Scale the server container to a given number of instances.
+    scale: 3
     restart: always
 
   math:
