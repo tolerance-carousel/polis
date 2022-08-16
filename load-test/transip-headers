@@ -1,0 +1,16 @@
+# JMeter generated Header file
+Access-Control-Allow-Credentials	true
+Access-Control-Allow-Headers	Cache-Control, Pragma, Origin, Authorization, Content-Type, X-Requested-With
+Access-Control-Allow-Methods	GET, PUT, POST, DELETE, OPTIONS
+Access-Control-Allow-Origin	http://localhost:5000
+Cache-Control	no-cache
+Connection	keep-alive
+Content-Length	414
+Content-Type	application/json; charset=utf-8
+Date	Wed, 03 Aug 2022 09:43:10 GMT
+ETag	W/"19e-nb0svuOewBK1G1zDw6pvyw"
+Set-Cookie	token2=TS2AeiiciiiKAXmqDjIR; Max-Age=31536000; Path=/; Expires=Thu, 03 Aug 2023 09:43:10 GMT; HttpOnly
+Set-Cookie	uid2=219; Max-Age=31536000; Path=/; Expires=Thu, 03 Aug 2023 09:43:10 GMT
+Set-Cookie	uc=1659519790257; Max-Age=31536000; Path=/; Expires=Thu, 03 Aug 2023 09:43:10 GMT
+Vary	Accept-Encoding
+x-polis	TS2AeiiciiiKAXmqDjIR

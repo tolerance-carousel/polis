@@ -82,7 +82,7 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Back-end polling (all users, every second)" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Back-end polling (all users, every second)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -195,7 +195,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Back-end polling (main screen)" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Back-end polling (main screen)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -307,7 +307,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Polis math conversation #1 polling (all users, every second)" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Polis math conversation #1 polling (all users, every second)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -340,8 +340,8 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Poll every 0.5 - 1.5 seconds" enabled="true">
-          <stringProp name="ConstantTimer.delay">500</stringProp>
+        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Poll every 3.5 - 4.5 seconds" enabled="true">
+          <stringProp name="ConstantTimer.delay">3500</stringProp>
           <stringProp name="RandomTimer.range">1000</stringProp>
         </UniformRandomTimer>
         <hashTree/>
@@ -420,7 +420,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Polis math conversation #2 polling (all users, every second)" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Polis math conversation #2 polling (all users, every second)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -453,8 +453,8 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Poll every 0.5 - 1.5 seconds" enabled="true">
-          <stringProp name="ConstantTimer.delay">500</stringProp>
+        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Poll every 3.5 - 4.5 seconds" enabled="true">
+          <stringProp name="ConstantTimer.delay">3500</stringProp>
           <stringProp name="RandomTimer.range">1000</stringProp>
         </UniformRandomTimer>
         <hashTree/>
@@ -533,7 +533,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Polis math conversation #3 polling (all users, every second)" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Polis math conversation #3 polling (all users, every second)" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -566,8 +566,8 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Poll every 0.5 - 1.5 seconds" enabled="true">
-          <stringProp name="ConstantTimer.delay">500</stringProp>
+        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Poll every 3.5 - 4.5 seconds" enabled="true">
+          <stringProp name="ConstantTimer.delay">3500</stringProp>
           <stringProp name="RandomTimer.range">1000</stringProp>
         </UniformRandomTimer>
         <hashTree/>
@@ -967,8 +967,8 @@ vars.put(&quot;statement&quot;, randomStatement)</stringProp>
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Vote every 0.5 - 1.5 seconds" enabled="true">
-          <stringProp name="ConstantTimer.delay">500</stringProp>
+        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Vote every 1 - 2 seconds" enabled="true">
+          <stringProp name="ConstantTimer.delay">1000</stringProp>
           <stringProp name="RandomTimer.range">1000</stringProp>
         </UniformRandomTimer>
         <hashTree/>

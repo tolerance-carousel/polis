@@ -1,0 +1,17 @@
+# JMeter generated Header file
+access-control-allow-credentials	true
+access-control-allow-headers	Cache-Control, Pragma, Origin, Authorization, Content-Type, X-Requested-With
+access-control-allow-methods	GET, PUT, POST, DELETE, OPTIONS
+access-control-allow-origin	https://polis.boasmedia.nl
+cache-control	no-cache
+content-length	33
+content-type	application/json; charset=utf-8
+date	Wed, 03 Aug 2022 08:27:34 GMT
+etag	W/"21-uZhLNZuL/GjlcIpQUN71Gw"
+server	Caddy
+set-cookie	token2=XHKfsHPZgGWNillIoKCf; Max-Age=31536000; Path=/; Expires=Thu, 03 Aug 2023 08:27:34 GMT; HttpOnly
+set-cookie	uid2=220; Max-Age=31536000; Path=/; Expires=Thu, 03 Aug 2023 08:27:34 GMT
+set-cookie	uc=1659515254188; Max-Age=31536000; Path=/; Expires=Thu, 03 Aug 2023 08:27:34 GMT
+set-cookie	pc=ipqjIpaDEyMi4Ly56Afm; Max-Age=31536000; Path=/; Expires=Thu, 03 Aug 2023 08:27:34 GMT; HttpOnly
+vary	Accept-Encoding
+x-polis	XHKfsHPZgGWNillIoKCf
