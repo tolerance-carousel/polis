@@ -5,5 +5,5 @@ math/.cpcache
 *.tar
 
 load-test/report*
-load-test/results
+load-test/results*
 load-test/jmeter.log
