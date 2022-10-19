@@ -1,4 +1,4 @@
-polis.boasmedia.nl {
+polis.boasmedia.nl, polis.utrechttimemachine.nl {
   reverse_proxy 127.0.0.1:5000 127.0.0.1:5001 127.0.0.1:5002 127.0.0.1:5003 127.0.0.1:5004 127.0.0.1:5005 127.0.0.1:5006 127.0.0.1:5007
 
   log {
@@ -6,21 +6,21 @@ polis.boasmedia.nl {
   }
 }
 
-backend.boasmedia.nl {
+backend.boasmedia.nl, carousel-backend.utrechttimemachine.nl {
 	reverse_proxy 127.0.0.1:4001
 	log {
 		output file /var/log/backend-access.log
 	}	
 }
 
-websocket.boasmedia.nl {
+websocket.boasmedia.nl, carousel-websocket.utrechttimemachine.nl {
         reverse_proxy 127.0.0.1:4000
         log {
                 output file /var/log/socket-access.log
         }
 }
 
-experience.boasmedia.nl {
+experience.boasmedia.nl, carousel-experience.utrechttimemachine.nl {
 	root * ../interactive-video-experiment/front-end/dist
 	file_server
 	try_files {path} /index.html
