@@ -1401,7 +1401,7 @@ function initializePolisHelpers() {
     "api.twitter.com",
     "connect.stripe.com",
     "85.10.132.159",
-    "polis.boasmedia.nl",
+    "polis.utrechttimemachine.nl",
     "", // for API
   ];
 
